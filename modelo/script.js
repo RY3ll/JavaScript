@@ -1,0 +1,1 @@
+window.alert("Olá, mundo! Este é o meu primeiro script em JavaScript.");
