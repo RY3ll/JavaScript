@@ -1,5 +1,10 @@
 let cd = window.prompt('Antes de mais nada. Quanto está a cotação do dólar agora?')
+
+while (cd === '') {
+    cd = window.prompt('Por favor, digite a cotação do dólar para continuar.')
+}
 let cdo = Number.parseFloat(cd)
+
 
 function converter() {
     let reais = window.prompt('Quantos R$ você tem na carteira?')

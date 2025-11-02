@@ -1,5 +1,9 @@
 function converter() {
     let met = window.prompt('Digite uma distância em metros (m)')
+    while (met === '') {
+        met = window.prompt('Por favor, digite a distância antes de contnuar.')
+    }
+    
     let titxt = document.getElementById('ti')
     let ul = document.getElementById('lista')
     let m = Number(met)

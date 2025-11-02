@@ -1,5 +1,9 @@
 function converter() {
     let cel = window.prompt('Digite uma temperatura em C° (Celsius)')
+    while (cel === '') {
+        cel = window.prompt('Por favor, digite a temperatura antes de continuar.')
+    }
+
     let p = document.getElementById('p')
     let ul = document.getElementById('lista')
     let c = Number.parseFloat(cel)
